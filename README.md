@@ -51,7 +51,69 @@ Pareto analysis
 
 **6. ASSUMPTIONS**
 
-  a. 
+  a. 4 machines (CNC-1 to CNC-4), 3 Shifts (A,B,C), 30 days, 480 planned minutes per shift
+  b. Ideal cycle times are : 30 s, 30 s, 45 s and 60 s.
+  c. Number of stops per shift follows a Poisson distribution, where mean stops per shifts are : 2.0, 2.5, 4.0, and 2.0 for CNC-1 to CNC-4 respectively. CNC-3 is deliberately modelled as a problematic machine.
+  d. Stop duration follows an exponential distribution with a different mean for each cause from 8 to 40 minutes.
+  e. Eight downtime causes with skewed probabilities, grouped into four categories: Breakdown, Setup, Material and other.
+  f. each shift runs at 80-95% of ideal speed at random.
+  g. Each shift has a random scrap rate of 1% to 5%.
+  h. No shift effect was built into the data
+
+**7. RESULTS**
+
+A. OVERALL EQUIPMENT EFFECTIVENESS
+
+	              Availability	  Performance	    Quality	      OEE
+                
+Plant overall	    89.1%	          87.2%	          97.1%	    75.4%
+
+CNC-1	            92.8%	          87.5%	          97.0%	    78.8%
+CNC-2	            88.2%	          87.1%	          97.2%	    74.7%
+CNC-3	            83.0%	          87.3%	          96.9%	    70.3%
+CNC-4	            92.5%	          87.0%	          97.1%	    78.1%
+
+Shift A        	  89.2%	          87.3%	          97.0%	    75.6%
+Shift B	          89.5%	          87.0%	          97.0%	    75.6%
+Shift C	          88.6%	          87.4%	          97.1%	    75.2%
+
+
+B. DOWNTIME PARETO (PLANT WIDE, BY CAUSE)
+
+Cause	                    Minutes	      %	      Cumulative %
+Tool breakage          	    4835	    25.7	        25.7
+Changeover	                3664	    19.5	        45.2
+Hydraulic leak	            3313	    17.6	        62.8
+Operator absence	          2297	    12.2	        75.0
+Material shortage	          1881	    10.0	        85.0
+Sensor fault	              1406	     7.5	         92.5
+Coolant issue              	 718	     3.8	         96.3
+Inspection wait	             694	     3.7	        100.0
+
+
+C. DOWNTIME PARETO (BY CATEGORY)
+
+Category	                Minutes	      %	      Cumulative %
+Breakdown	                 10272	    54.6	        54.6
+Setup        	              3664	    19.5	        74.1
+Other	                      2991	    15.9	        90.0
+Material	                  1881	    10.0	       100.0
 
 
 
+**8. KEY FINDINGS**
+
+  A. Plant OEE is 75.4%, which lies below ~85%, which is commonly quoted as world-class. The largest loss is performance (87.2%), followed by availability (89.1%). Quality loss is small.
+  B. CNC-3 is the weakest machine with (70.3% OEE), almost entirely due to the loss of availability (83.0% for CNC-3 vs 92.8% for CNC-1). But, the performance and quality are similar to that of other machines.
+  C. Tool breakage is the largest single cause of downtime accounting for 25.7%. However, Downtime due to breakdown is 54.6% indicating that developing a broader maintenance strategy offers improvement potential.
+  D. In CNC-3, the second largest single downtime cause is hydraulic leaks at 22.7% which is almost as large as tool breakage at 24.2% of the total downtime. In a real environment, this would help pointing out to an equipment specific problem.
+
+**9. LIMITATIONS**
+
+  A. The data is simulated. The conclusion only shows that the analysis works and behaves sensibly and do not represent any information about a real production plant.
+  B. Performance loss is a single random factor per shift. It is not broken down into minor stops versus reduced speed. 
+  C. Scheduled breaks and planned maintenance were not modelled separately from unplanned downtime. 
+  D. Every machines shares the same cause probabilities, only the stop rate differs.
+
+**Author**
+Tharaniraam Sakthimurugan | https://www.linkedin.com/in/tharaniraam/ | tharaniraamcs@gmail.com
