@@ -32,16 +32,16 @@ OEE_PROJECT/
 
 **5. METHODOLOGY:**
 
-|  **Metric**    |  **Formula**                                  |  **Loss Captured**                          |
-|  ============  |  ===========================================  |  =========================================  |
-|  Availability  |  run time / planned time                      |  breakdown, changeover, material shortages  |
-|  Performance   |  (ideal cycle time * total parts) / run time  |  slow cycle, minor stops                    |
-|  Quality       |  good parts / total parts                     |  scrap and rework                           |
-|  **OEE**       |  Availability * performance * Quality         |                   -                         |
+| Metric | Formula | Loss Captured |
+|---|---|---|
+| Availability | run time / planned time | breakdown, changeover, material shortages |
+| Performance | (ideal cycle time * total parts) / run time | slow cycle, minor stops |
+| Quality | good parts / total parts | scrap and rework |
+| **OEE** | Availability * performance * Quality | - |
 
 
 
-| **Metric** | Formula | Losses Captured |
+| Metric | Formula | Losses Captured |
 |---|---|---|
 | **Availability** | Run time / Planned time | Breakdown<br>Changeover<br>Material shortages |
 | **Performance** | (Ideal cycle time × Total parts) / Run time | Slow cycle<br>Minor stops |
