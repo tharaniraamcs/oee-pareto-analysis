@@ -115,5 +115,5 @@ C. DOWNTIME PARETO (BY CATEGORY)
   C. Scheduled breaks and planned maintenance were not modelled separately from unplanned downtime. 
   D. Every machines shares the same cause probabilities, only the stop rate differs.
 
-**Author**
+**Author:**<br>
 Tharaniraam Sakthimurugan | https://www.linkedin.com/in/tharaniraam/ | tharaniraamcs@gmail.com
