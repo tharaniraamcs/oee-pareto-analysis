@@ -41,7 +41,7 @@ OEE_PROJECT/
 
 
 
-| Metric | Formula | Losses Captured |
+| **Metric** | Formula | Losses Captured |
 |---|---|---|
 | **Availability** | Run time / Planned time | Breakdown<br>Changeover<br>Material shortages |
 | **Performance** | (Ideal cycle time × Total parts) / Run time | Slow cycle<br>Minor stops |
