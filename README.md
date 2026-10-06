@@ -73,9 +73,9 @@ A. OVERALL EQUIPMENT EFFECTIVENESS
 	CNC-3	            83.0%	          87.3%	          96.9%	    70.3%
 	CNC-4	            92.5%	          87.0%	          97.1%	    78.1%
 
-	Shift A        	 	 89.2%	          87.3%	          97.0%	    75.6%
-	Shift B	         	 89.5%	          87.0%	          97.0%	    75.6%
-	Shift C	          8	8.6%	          87.4%	          97.1%	    75.2%
+	Shift A        	 	89.2%	          87.3%	          97.0%	    75.6%
+	Shift B	         	89.5%	          87.0%	          97.0%	    75.6%
+	Shift C	          	88.6%	          87.4%	          97.1%	    75.2%
 
 
 B. DOWNTIME PARETO (PLANT WIDE, BY CAUSE)
@@ -84,11 +84,11 @@ B. DOWNTIME PARETO (PLANT WIDE, BY CAUSE)
 	Tool breakage          	    4835	    25.7	        25.7
 	Changeover	                3664	    19.5	        45.2
 	Hydraulic leak	            3313	    17.6	        62.8
-	Operator absence	          2297	    12.2	        75.0
-	Material shortage	          1881	    10.0	        85.0
-	Sensor fault	              1406	     7.5	         92.5
-	Coolant issue              	 718	     3.8	         96.3
-	Inspection wait	             694	     3.7	        100.0
+	Operator absence	        2297	    12.2	        75.0
+	Material shortage	        1881	    10.0	        85.0
+	Sensor fault	            1406	     7.5	        92.5
+	Coolant issue              	 718	     3.8	        96.3
+	Inspection wait	             694	     3.7	       100.0
 
 
 C. DOWNTIME PARETO (BY CATEGORY)
