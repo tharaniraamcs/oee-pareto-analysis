@@ -39,6 +39,15 @@ OEE_PROJECT/
 |  Quality       |  good parts / total parts                     |  scrap and rework                           |
 |  **OEE**       |  Availability * performance * Quality         |                   -                         |
 
+
+
+| Metric | Formula | Losses Captured |
+|---|---|---|
+| **Availability** | Run time / Planned time | Breakdown<br>Changeover<br>Material shortages |
+| **Performance** | (Ideal cycle time × Total parts) / Run time | Slow cycle<br>Minor stops |
+| **Quality** | Good parts / Total parts | Scrap<br>Rework |
+| **OEE** | Availability × Performance × Quality | — |
+
 **NOTE:** OEE is calculated by summing up raw times and parts count first. Average per shift percentages are not considered in calculation as different machines have different volumes.
 The OEE function was verified by hand against a three rows of production logs.
 
