@@ -2,17 +2,17 @@ OVERALL EQUIPMENT EFFECTIVENESS TRACKER AND PARETO ANALYSIS
 
 This python project calculates overall equipment effectiveness (OEE) for a CNC machine shop and uses Pareto analysis to find the time loss in production using **pandas, numpy and matplotlib**
 
-Note: The data in this project is simulated. The parameters are assumed to look realistic. The overall findings below describes a model, not a real scenario.
+Note: The data in this project is simulated. The parameters are assumed to look realistic. The overall findings below describe a model, not a real scenario.
 
 **1. PROBLEM:**
 
-A factory wants to understands its machine utilisation and which losses to attack first. OEE answers the first question with a single number. Pareto analysis answers the second by ranking downtime causes by size, as smaller causes account for most of the lost time.
+A factory wants to understand its machine utilisation and which losses to attack first. OEE answers the first question with a single number. Pareto analysis answers the second by ranking downtime causes by size, as smaller causes account for most of the lost time.
 
 **2. OBJECTIVE:**
 
-  a.  This model generates a 30 days of production and downtime logs for 4 CNC machines, across 3 shifts per day (generate_machine_data.py)
-  b.  The OEE, Availability, Performance, Quality is calculated in categories such as plant wide, per machine, per shift and per day (analysis.py)
-  c.  The downtime loss is ranked with the help of pareto chart at categorized such as plant wide by cause, plant wide by category, and one chart per machine.
+  a.  This model generates 30 days of production and downtime logs for 4 CNC machines, across 3 shifts per day (generate_machine_data.py)
+  b.  The OEE, Availability, Performance, Quality are calculated in categories such as plant wide, per machine, per shift and per day (analysis.py)
+  c.  The downtime losses are ranked with the help of pareto chart at categorized such as plant wide by cause, plant wide by category, and one chart per machine.
 
 **3. STRUCTURE:**
 
@@ -40,7 +40,7 @@ OEE_PROJECT/
 | **OEE** | Availability × Performance × Quality | — |
 
 **NOTE:** OEE is calculated by summing up raw times and parts count first. Average per shift percentages are not considered in calculation as different machines have different volumes.
-The OEE function was verified by hand against a three rows of production logs.
+The OEE function was verified manually against three rows of production logs.
 
 Pareto analysis
   1. Sum downtime (minutes) for each cause/category/machine-specific-cause
@@ -56,7 +56,7 @@ Pareto analysis
   c. Number of stops per shift follows a Poisson distribution, where mean stops per shifts are : 2.0, 2.5, 4.0, and 2.0 for CNC-1 to CNC-4 respectively. CNC-3 is deliberately modelled as a problematic machine.
   d. Stop duration follows an exponential distribution with a different mean for each cause from 8 to 40 minutes.
   e. Eight downtime causes with skewed probabilities, grouped into four categories: Breakdown, Setup, Material and other.
-  f. each shift runs at 80-95% of ideal speed at random.
+  f. each shift operates at 80-95% of ideal speed at random.
   g. Each shift has a random scrap rate of 1% to 5%.
   h. No shift effect was built into the data
 
